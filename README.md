@@ -134,7 +134,7 @@ docker run -d \
 *Consultor de TI & Especialista em Infraestrutura Linux, Engenharia de Dados & IA Privada*  
 - **GitHub:** [@marcos-data-engineer](https://github.com/marcos-data-engineer)  
 - **LinkedIn:** [Marcos Vasconcellos de Andrade](https://www.linkedin.com/in/marcos-data-engineer)  
-- **Blog:** [Beyond AI Code](https://marcos-data-engineer.github.io/blog/)  
+- **Blog:** [Arquitetura de Dados & IA](https://marcos-data-engineer.github.io/blog/)  
 
 ---
 *Distribuído sob a licença MIT.*
