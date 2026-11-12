@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto-accept GNOME Input Capture Portal for Deskflow
+After=graphical-session.target deskflow.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/marcos/.local/bin/auto-accept-input-capture.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target default.target

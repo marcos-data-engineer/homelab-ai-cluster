@@ -1,0 +1,13 @@
+[Unit]
+Description=Sincroniza Volume/Mute do GNOME PC com Snapserver
+After=snapserver.service pipewire-pulse.service
+Requires=snapserver.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/marcos/.local/bin/snapcast-volume-sync.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

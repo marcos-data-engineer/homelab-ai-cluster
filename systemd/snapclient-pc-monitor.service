@@ -1,0 +1,14 @@
+[Unit]
+Description=Snapcast Client - Direita (Monitor AOC EQ)
+After=snapserver.service pipewire.service
+Requires=snapserver.service
+
+[Service]
+Type=simple
+Environment="PIPEWIRE_NODE=pc_monitor_eq"
+ExecStart=/home/marcos/.local/bin/snapclient --host 127.0.0.1 --player alsa -s pipewire --hostID pc_monitor
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Snapcast Client - Centro (Caixinhas PC EQ)
+After=snapserver.service pipewire.service
+Requires=snapserver.service
+
+[Service]
+Type=simple
+Environment="PIPEWIRE_NODE=pc_box_eq"
+ExecStart=/home/marcos/.local/bin/snapclient --host 127.0.0.1 --player alsa -s pipewire --hostID pc_box
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

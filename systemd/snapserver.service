@@ -1,0 +1,12 @@
+[Unit]
+Description=Snapcast Audio Sync Server
+After=pipewire.service
+
+[Service]
+Type=simple
+ExecStart=/home/marcos/.local/bin/snapserver -c /home/marcos/.config/snapcast/snapserver.conf
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
